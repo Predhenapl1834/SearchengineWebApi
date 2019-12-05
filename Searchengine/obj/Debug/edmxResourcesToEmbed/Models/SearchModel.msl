@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SearchEngineModelStoreContainer" CdmEntityContainer="SearchEngineDB">
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="SearchEngineModel.Medicine">
+        <MappingFragment StoreEntitySet="Medicine">
+          <ScalarProperty Name="medId" ColumnName="medId" />
+          <ScalarProperty Name="medName" ColumnName="medName" />
+          <ScalarProperty Name="medPrice" ColumnName="medPrice" />
+          <ScalarProperty Name="medDescription" ColumnName="medDescription" />
+          <ScalarProperty Name="medExpiryDate" ColumnName="medExpiryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
